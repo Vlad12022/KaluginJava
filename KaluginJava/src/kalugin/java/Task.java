@@ -31,7 +31,10 @@ public class Task {
                         String[] stringArray = input.split(DELIMITER);
                         if (stringArray.length > 0) {
                             System.out.println("The numbers that are multiples of 3: ");
-                            Stream.of(stringArray).map(Long::valueOf).filter(e -> e % 3 == 0).forEach(System.out::println);
+                            Stream.of(stringArray)
+                                    .map(Long::valueOf)
+                                    .filter(e -> e % 3 == 0)
+                                    .forEach(System.out::println);
                         } else {
                             System.out.println(NO_NAME);
                         }
