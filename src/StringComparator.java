@@ -5,16 +5,16 @@ public class StringComparator {
 
         try (Scanner scan = new Scanner(System.in)) {
 
-            System.out.println("Введите строку a: ");
+            System.out.println("Enter the line a: ");
             String a = scan.nextLine();
 
-            System.out.println("Введите строку b: ");
+            System.out.println("Enter the line b: ");
             String b = scan.nextLine();
 
             if (a.equals(b)) {
-                System.out.println("Строки идентичны");
+                System.out.println("The lines are identical");
             } else {
-                System.out.println("Строки неидентичны!");
+                System.out.println("The strings are not identical!");
             }
         }
     }
